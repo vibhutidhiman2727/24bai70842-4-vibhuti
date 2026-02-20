@@ -2,13 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Wallet App</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <script src="script.js"></script>
+
+<div class="container">
+    <h2>💰 Simple Wallet</h2>
+
+    <div class="balance-box">
+        <p>Current Balance</p>
+        <h1 id="balance">₹0</h1>
+    </div>
+
+    <div class="deposit-buttons">
+        <button onclick="addMoney(500)">➕ Add ₹500</button>
+        <button onclick="addMoney(1000)">➕ Add ₹1000</button>
+        <button onclick="addMoney(2000)">➕ Add ₹2000</button>
+    </div>
+
+    <div class="withdraw-section">
+        <input type="number" id="withdrawAmount" placeholder="Enter amount to withdraw">
+        <button onclick="withdrawMoney()">Withdraw</button>
+    </div>
+
+    <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
